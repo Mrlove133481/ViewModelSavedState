@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ViewModelSavedState</string>
+    <string name="textview">默认</string>
+    <string name="button">+1</string>
 </resources>
