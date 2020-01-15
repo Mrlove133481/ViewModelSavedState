@@ -13,7 +13,7 @@ public class MyViewModel extends ViewModel {
 
     public MutableLiveData<Integer> getNumber(){
         if (!handle.contains(MainActivity.KEY_NUMBER)){
-            handle.set(MainActivity.KEY_NUMBER,0);
+            handle.set(MainActivity.KEY_NUMBER,0);  //判断Handle里面的值是否被初始化，如果没有，就赋值这个key的值为0
         }
         return handle.getLiveData(MainActivity.KEY_NUMBER);
     }

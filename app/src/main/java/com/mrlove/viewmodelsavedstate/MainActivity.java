@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
-        viewModel = new ViewModelProvider(this).get(MyViewModel.class);
-        binding.setData(viewModel);
-        binding.setLifecycleOwner(this);
+        viewModel = new ViewModelProvider(this).get(MyViewModel.class);//新的方式获取ViewModel实例
+        binding.setData(viewModel);//给前台data绑定数据
+        binding.setLifecycleOwner(this);//观察者
     }
 }
